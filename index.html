@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>TLE GROUP 1 MARGARET ARDUINO WEBSITE</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Lora:ital,wght@0,400;1,500&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --ghibli-green: #4A6741;
+            --ghibli-cream: #FDF5E6;
+            --ghibli-sky: #A8D5BA;
+            --ghibli-wood: #5D4037;
+            --ghibli-accent: #E9967A; 
+        }
+
+        body {
+            font-family: 'Lora', serif; 
+            margin: 0;
+            padding: 0;
+            
+            background: linear-gradient(rgba(253, 245, 230, 0.8), rgba(253, 245, 230, 0.8)), 
+                        url("https://i.pinimg.com/originals/57/b9/e5/57b9e5526b70cecc4558a284330e0c1d.gif");
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            color: var(--ghibli-wood);
+        }
+
+        
+        .header {
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.4)), 
+                              url("https://i.pinimg.com/originals/57/b9/e5/57b9e5526b70cecc4558a284330e0c1d.gif");
+            background-size: cover; 
+            background-repeat: no-repeat;
+            background-position: center 20%;
+            padding: 80px 20px;
+            text-align: center;
+            border-bottom: 5px solid var(--ghibli-sky);
+        }
+
+        .nameplate {
+            font-family: 'Comfortaa', cursive;
+            font-size: 65px;
+            margin: 0;
+            color: #ffffff;
+            text-shadow: 3px 3px 10px rgba(0,0,0,0.5);
+            letter-spacing: 2px;
+        }
+        
+        .article-card:hover {
+            transform: translateY(-5px);
+            transition: transform 0.3s ease;
+        }
+
+        .nav-bar {
+            background-image: url("https://i.pinimg.com/736x/9c/f9/8a/9cf98a5492567abfee8c95cf88e590c6.jpg");
+            backdrop-filter: blur(5px);
+            border-bottom: 2px solid var(--ghibli-sky);
+            text-align: center;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+            color: var(--ghibli-green);
+            font-weight: 600;
+            font-family: 'Poppins', sans-serif;
+            margin: 0 25px;
+            font-size: 14px;
+            letter-spacing: 1px;
+            transition: 0.3s;
+        }
+
+        .nav-link:hover {
+            color: var(--ghibli-accent);
+        }
+
+        .main-container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        
+        .article-card, .sidebar-column {
+            background-color: rgba(255, 251, 240, 0.9); 
+            padding: 30px;
+            border-radius: 20px;
+            color: #444;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+            border: 1px solid rgba(74, 103, 65, 0.2);
+        }
+
+        .news-column { flex: 2; min-width: 300px; }
+        .sidebar-column { flex: 1; min-width: 250px; }
+
+        .article-title { 
+            font-family: 'Comfortaa', cursive;
+            color: var(--ghibli-green); 
+            margin-top: 0; 
+            border-bottom: 1px dashed var(--ghibli-sky); 
+            padding-bottom: 10px;
+        }
+
+        
+        .cta-button {
+            display: inline-block; 
+            padding: 12px 25px; 
+            background: var(--ghibli-green); 
+            color: white; 
+            text-decoration: none; 
+            border-radius: 30px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            transition: transform 0.2s;
+        }
+
+        .cta-button:hover {
+            background: var(--ghibli-accent);
+            transform: scale(1.05);
+        }
+
+        .footer {
+            background-color: var(--ghibli-green);
+            color: #f0f0f0;
+            text-align: center;
+            padding: 50px;
+            margin-top: 60px;
+            border-top: 8px solid var(--ghibli-sky);
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <h1 class="nameplate">TEAM UNO</h1>
+        <p style="font-size: 20px; font-weight: 300; margin: 15px 0; color: white; font-family: 'Poppins';">The Magic of Arduino</p>
+        <p style="font-style: italic; opacity: 0.9; color: #eee;">St. Joseph's College of Quezon City | SY 2025-2026</p>
+    </header>
+
+    <nav class="nav-bar">
+        <a href="index.html" class="nav-link">HOME</a>
+        <a href="news.html" class="nav-link">PROJECTS</a>
+        <a href="about.html" class="nav-link">CREDITS</a>
+    </nav>
+
+    <div class="main-container">
+        <section class="news-column">
+    
+            </div>
+            <div class="article-card">
+                <h3 class="article-title">Who is Team Uno?</h3>
+                <p>Team Uno is a group of students from St. Joseph's College of Quezon City who are passionate about Arduino projects. We aim to create innovative and fun projects using the Arduino platform, showcasing our creativity and technical skills.</p>
+            </div>
+
+            <div class="article-card">
+                <h3 class="article-title">THE MATERIAL LIST</h3>
+                <p>Ready to build your own mechanical wonder? Explore our collection of sensors, boards, and magic components.</p>
+                <a href="P1.html" class="cta-button">Open Materials List</a>
+            </div>
+
+
+            
+        </section>
+
+        <aside class="sidebar-column">
+            <h2 style="color: var(--ghibli-green); font-family: 'Comfortaa'; margin-top: 0;">ARDUINO DESCRIPTION</h2>
+            <hr style="border: 0; border-top: 1px solid #ddd;">
+            <p><strong>What is an Arduino?</strong><br>
+            <small>An open-source electronics platform based on easy-to-use hardware and software.</small></p>
+            <hr style="border: 0; border-top: 1px solid #ddd;">
+            <p><strong>What is an Arduino IDE?</strong><br>
+            <small>The software used to write, compile, and upload code to your boards.</small></p>
+        </aside>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 Group 1 of Margaret. Hand-crafted with heart.</p>
+        <p><small>Arduino Projects | Science & Technology Section</small></p>
+    </footer>
+
+</body>
+</html>

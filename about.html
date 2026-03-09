@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CREDITS | TEAM UNO</title>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Lora:ital,wght@0,400;1,500&family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --ghibli-green: #4A6741;
+            --ghibli-cream: #FDF5E6;
+            --ghibli-sky: #A8D5BA;
+            --ghibli-wood: #5D4037;
+            --ghibli-accent: #E9967A; 
+        }
+
+        body {
+            font-family: 'Lora', serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(rgba(253, 245, 230, 0.85), rgba(253, 245, 230, 0.85)), 
+                        url("https://i.pinimg.com/originals/57/b9/e5/57b9e5526b70cecc4558a284330e0c1d.gif");
+            background-size: cover;
+            background-attachment: fixed;
+            color: var(--ghibli-wood);
+        }
+
+        .header {
+            background-image: linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.5)), 
+                              url("https://i.pinimg.com/originals/57/b9/e5/57b9e5526b70cecc4558a284330e0c1d.gif");
+            background-size: cover; 
+            padding: 60px 20px;
+            text-align: center;
+            border-bottom: 5px solid var(--ghibli-sky);
+        }
+
+        .nameplate {
+            font-family: 'Comfortaa', cursive;
+            font-size: 50px;
+            margin: 0;
+            color: #ffffff;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+        }
+
+        .nav-bar {
+            background-image: url("https://i.pinimg.com/736x/9c/f9/8a/9cf98a5492567abfee8c95cf88e590c6.jpg");
+            text-align: center;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            border-bottom: 2px solid var(--ghibli-sky);
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: var(--ghibli-green);
+            font-weight: 600;
+            font-family: 'Poppins', sans-serif;
+            margin: 0 20px;
+            text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.8);
+        }
+
+        
+        .credits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        .member-card {
+            background-color: rgba(255, 251, 240, 0.9);
+            border-radius: 15px;
+            overflow: hidden; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            border: 1px solid rgba(74, 103, 65, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .member-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .member-photo {
+            width: 100%;
+            height: 200px;
+            object-fit: cover; 
+            border-bottom: 3px solid var(--ghibli-sky);
+        }
+
+        .member-info {
+            padding: 20px;
+        }
+
+        .member-name {
+            font-family: 'Comfortaa', cursive;
+            font-size: 1.2rem;
+            color: var(--ghibli-green);
+            margin: 0;
+        }
+
+        .member-role {
+            font-family: 'Poppins', sans-serif;
+            font-size: 0.85rem;
+            color: var(--ghibli-accent);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            display: block;
+            margin-top: 5px;
+        }
+
+        .footer {
+            background-color: var(--ghibli-green);
+            color: #f0f0f0;
+            text-align: center;
+            padding: 40px;
+            margin-top: 60px;
+            border-top: 8px solid var(--ghibli-sky);
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <h1 class="nameplate">PRODUCTION CAST</h1>
+        <p style="color: white; font-family: 'Poppins';">Team Uno | SY 2025-2026</p>
+    </header>
+
+    <nav class="nav-bar">
+        <a href="index.html" class="nav-link">HOME</a>
+        <a href="news.html" class="nav-link">PROJECTS</a>
+        <a href="about.html" class="nav-link">CREDITS</a>
+    </nav>
+
+    <div class="credits-grid">
+        
+        <div class="member-card">
+            <img src="majadas.jpg" class="member-photo" alt="Teacher">
+            <div class="member-info">
+                <h3 class="member-name">Ms. Valerie Majadas</h3>
+                <span class="member-role">Teacher</span>
+            </div>
+        </div>
+
+        <div class="member-card">
+            <img src="608526390_1377503590577537_1647257047876310590_n.jpg" class="member-photo" alt="Leader">
+            <div class="member-info">
+                <h3 class="member-name">Aaron Gabriel</h3>
+                <span class="member-role">Leader & Programmer</span>
+            </div>
+        </div>
+
+        <div class="member-card">
+            <img src="jg.png" class="member-photo" alt="Head Programmer">
+            <div class="member-info">
+                <h3 class="member-name">John Gabriel</h3>
+                <span class="member-role">Head-Programmer</span>
+            </div>
+        </div>
+
+        <div class="member-card">
+            <img src="ja.jpg" class="member-photo" alt="Documentation">
+            <div class="member-info">
+                <h3 class="member-name">John Aguilar</h3>
+                <span class="member-role">Documentation</span>
+            </div>
+        </div>
+
+        <div class="member-card">
+            <img src="masha.jpg" class="member-photo" alt="Documentation">
+            <div class="member-info">
+                <h3 class="member-name">Mishel Jaafar</h3>
+                <span class="member-role">Documentation</span>
+            </div>
+        </div>
+
+        <div class="member-card">
+            <img src="yram.png" class="member-photo" alt="Documentation">
+            <div class="member-info">
+                <h3 class="member-name">Carls Yyram</h3>
+                <span class="member-role">Documentation</span>
+            </div>
+        </div>
+
+        <div class="member-card">
+            <img src="cyril.jpg" class="member-photo" alt="Documentation">
+            <div class="member-info">
+                <h3 class="member-name">Cyril Santiago</h3>
+                <span class="member-role">Documentation</span>
+            </div>
+        </div>
+
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2026 Group 1 of Margaret. Hand-crafted with heart.</p>
+    </footer>
+
+</body>
+</html>
